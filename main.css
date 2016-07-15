@@ -96,7 +96,7 @@ body {
 	background: #bbbbbb;
 }
 header {
-	width: 800px;
+	width: 85%;
 	height: 150px;
 	background: url("https://i.ytimg.com/vi/cSqdu7Qlz7k/maxresdefault.jpg") -200px -175px;
 	margin: 0 auto 0 auto;
@@ -135,15 +135,15 @@ main {
 article {
 	box-sizing: border-box;
 	float: left;
-	width: 550px;
+	width: 60%;
 	padding: 15px 15px 15px 15px;	
 }
 aside{
 	box-sizing: border-box;
-	width: 240px;
+	width: 30%;
 	float: right;
-	margin: 80px 10px 20px 0;
-	padding: 20px 10px 15px 15px;
+	margin: 80px 5% 20px 20px;
+	padding: 20px 15px 15px 15px;
 	background: rgba(181, 148, 78, 0.5);
 	border-radius: 18px;
 }
@@ -157,7 +157,7 @@ aside{
 .group {
 	overflow: hidden;
 	box-sizing: border-box;
-	width: 800px;
+	width: 85%;
 	background: url("http://cdn.obsidianportal.com/assets/234074/indaris_parchment.jpg");
 	margin: 0 auto 0 auto;
 	border-radius: 0 0 8px 8px;
@@ -190,18 +190,113 @@ footer {
 	font-family: "Times New Roman", serif;
 }
 img {
+	max-width: 90%;
+	height: auto;
 	margin: 20px;
 	border: 2px white solid;
 	box-shadow: 4px 4px 4px 0 #444444;
 }
 figcaption {
-	width: 450px;
+	width: 90%;
 	font-style: italic;
 	font-size: 12px;
-	margin: 0 0 25px 35px;
+	margin: 0 0 25px 20px;
 	line-height: 18px;
 }
 
 .dino-bio img {
 	float: left;
+}
+
+@media screen and (max-width: 768px) {
+	article {
+		width: 100%;
+	}
+
+	aside {
+		width: 90%;
+		margin: 5%;
+		padding: 0 auto 0 auto;
+		position: relative;
+	}
+
+	.group {
+		width: 100%;
+		margin: 0;
+		display: block;
+	}
+
+	header {
+		width: 100%;
+		margin: 0;
+	}
+
+	img {
+		display: block;
+		max-width: 80%;
+		margin: 20px auto 20px auto;
+	}
+
+	figcaption {
+		display: block;
+		max-width: 70%;
+		margin: 20px auto 20px auto;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	h1 {
+		font-size: 38px;
+	}
+
+}
+
+@media screen and (max-width: 410px) {
+	nav li {
+		display: block;
+		width: 100%;
+		padding: 10px 0 0 0;
+		font-size: 14px;
+		background: radial-gradient(circle, #777777, transparent);
+	}
+
+	nav li:hover {
+		background: radial-gradient(circle, #bbbbbb, transparent);
+	}
+
+	h1 {
+		padding: 10px 0 24px 0;
+		font-size: 24px;
+	}
+
+	header {
+		height: 130px;
+		background: url("https://i.ytimg.com/vi/cSqdu7Qlz7k/maxresdefault.jpg") -200px -195px;
+	}
+
+	.dino-bio img {
+		max-width: 50%;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 12px;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.dino-bio img {
+		float: none;
+		display: block;
+		margin: 0 auto 0 auto;
+	}
+	.dino-bio h3 {
+		text-align: center;
+	}
 }
